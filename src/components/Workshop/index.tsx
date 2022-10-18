@@ -1,7 +1,9 @@
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
-import exp from "constants";
 import Image from "next/image";
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import useDimensions from "../../hooks/useDimensions";
 
 interface IWorkshopProps {
     name: string; 
@@ -14,10 +16,15 @@ interface IWorkshopProps {
 
 const Workshop : React.FC<IWorkshopProps> = ({ setWorkshop, workshop, name, teachers, images, description }) => {
     const [ expanded, setExpanded ] = useState(false);
-    const [ boxProperties, setBoxProperties ] = useState({
+    const [ boxProperties, setBoxProperties ] = useState<{
+        left?: number,
+        top?: number,
+        width?: number,
+        height?: number,
+    }>({
         left: 0,
         top: 0,
-        width: 280,
+        width: undefined,
         height: 280
     })
 
@@ -61,15 +68,43 @@ const Workshop : React.FC<IWorkshopProps> = ({ setWorkshop, workshop, name, teac
             setBoxProperties({
                 left: 0,
                 top: 0,
-                height: 280,
-                width: 280
+                height: undefined,
+                width: undefined
             });
 
             window.document.body.style.overflow = "auto";
         }
     }, [ expanded, boxProperties, name, workshop, name  ]);
 
-    
+    const { width, height } = useDimensions({ enableDebounce: true });
+
+    const dimensionsRef = useRef({ width: width, height: height  });
+
+    useEffect(() => {
+        if (!expanded || !containerRef.current || boxProperties.left === 0 || boxProperties.top === 0) {
+            dimensionsRef.current = { width, height };
+            return;
+        }; 
+
+        if (width == dimensionsRef.current.width && height == dimensionsRef.current.height) {
+            dimensionsRef.current = { width, height };
+            return; 
+        } 
+
+        console.log(expanded, boxProperties, width, height, dimensionsRef.current);
+        setExpanded(false);
+        setBoxProperties({
+            height: undefined,
+            width: undefined,
+            left: 0,
+            top: 0
+        })
+
+        window.document.body.style.overflow = "auto";
+
+        dimensionsRef.current = { width, height };
+    }, [ expanded, width, height, boxProperties ]);
+
     useEffect(() => {
         if (workshop !== null && workshop !== name && expanded) {
             setWorkshop(null);
@@ -77,10 +112,9 @@ const Workshop : React.FC<IWorkshopProps> = ({ setWorkshop, workshop, name, teac
             setBoxProperties({
                 left: 0,
                 top: 0,
-                height: 280,
-                width: 280
+                height: undefined,
+                width: undefined
             });
-            window.document.body.style.overflow = "auto";
         }
     }, [ workshop ]);
 
@@ -92,13 +126,23 @@ const Workshop : React.FC<IWorkshopProps> = ({ setWorkshop, workshop, name, teac
                     transition: "all 300ms ease",
                     zIndex: expanded ? 999 : undefined,
                     overflow: expanded ? "auto" : "hidden",
-                    ...boxProperties
+                    ...boxProperties,
                 }}
                 onClick={handleExpand}
                 className={clsx(
                     "flex absolute w-[280px] my-3 mx-3 h-[280px] border-[rgba(255,255,255,0.1)] border flex-col items-center bg-[#111111] rounded-md p-6 z-10",
                     !expanded && "bg-opacity-50"
                 )}>
+                {
+                    expanded && (
+                        <FontAwesomeIcon 
+                            className="absolute cursor-pointer hover:opacity-50 transition-opacity top-5 right-5" 
+                            width={12} 
+                            icon={faXmark} 
+                            color="rgba(255,255,255,0.75)" 
+                        />
+                    )
+                }
                 <div className="my-3">
                     {
                         images.map((url, index) => (
