@@ -38,7 +38,7 @@ const Home: NextPage = () => {
                 <div className="space-x-6 flex">
                   <a href="https://tinyurl.com/5n86ht4r" rel="noopener noreferrer nofollow" target={"_blank"}>
                     <button className="bg-white transition-opacity hover:opacity-50 rounded-full p-3">
-                      Sign Up for a Workshop.
+                      Workshop Sign Up.
                     </button>
                   </a>
                  <a href="#workshops">
