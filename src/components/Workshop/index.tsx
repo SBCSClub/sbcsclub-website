@@ -84,7 +84,7 @@ const Workshop : React.FC<IWorkshopProps> = ({ setWorkshop, workshop, name, teac
         if (!expanded || !containerRef.current || boxProperties.left === 0 || boxProperties.top === 0) {
             dimensionsRef.current = { width, height };
             return;
-        }; 
+        }
 
         if (width == dimensionsRef.current.width && height == dimensionsRef.current.height) {
             dimensionsRef.current = { width, height };
