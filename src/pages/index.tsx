@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                     Master powerful tools and next-level skills to pursue a career in computer science.
                 </h2>
                 <div className="space-x-6 flex">
-                  <a href="https://tinyurl.com/5n86ht4r" rel="noopener noreferer nofollow" target={"_blank"}>
+                  <a href="https://tinyurl.com/5n86ht4r" rel="noopener noreferrer nofollow" target={"_blank"}>
                     <button className="bg-white transition-opacity hover:opacity-50 rounded-full p-3">
                       Sign Up for a Workshop.
                     </button>
