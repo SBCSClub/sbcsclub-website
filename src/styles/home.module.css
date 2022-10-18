@@ -17,6 +17,7 @@
     right: 0%; 
     width: 100%;
     height: 30%;
+    -webkit-filter: blur(92px);
     filter: blur(125px);
     transform: rotate(30deg);
     border-radius: 10%;
@@ -30,6 +31,7 @@
     right: 0%; 
     width: 100%;
     height: 30%;
+    -webkit-filter: blur(92px);
     filter: blur(125px);
     transform: rotate(-30deg);
     border-radius: 10%;

@@ -4,6 +4,7 @@
     left: 0; 
     width: 100%;
     height: 100px; 
+    -webkit-filter: blur(92px);
     filter: blur(125px);
     border-radius: 10%;
     max-height: 400px;
