@@ -21,4 +21,8 @@ export default defineNextConfig({
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    loader: "cloudinary",
+    path: "https://res.cloudinary.com/mahitm-cdn/image/upload/",
+  }
 });

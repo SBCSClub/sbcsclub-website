@@ -59,7 +59,7 @@ const Home: NextPage = () => {
               <div className="flex-1 flex mt-16 relative justify-center max-h-[1000px] items-center">
                 <div className="lg:absolute lg:scale-150 z-10">
                   <Image 
-                    src={"/code.png"} 
+                    src={"/sbcsclub/code.png"} 
                     quality={100} 
                     objectFit="contain" 
                     width={1000} 
@@ -132,7 +132,7 @@ const Home: NextPage = () => {
               <Workshop 
                 description=""
                 images={[
-                  "/workshops/flutter.png"
+                  "/sbcsclub/workshops/flutter.png"
                 ]}
                 teachers="Shreya & Sharvani"
                 name={"Flutter App Development"}
@@ -140,15 +140,15 @@ const Home: NextPage = () => {
                <Workshop 
                 description=""
                 images={[
-                  "/workshops/python.png"
+                  "/sbcsclub/workshops/python.png"
                 ]}
                 teachers="Diya & Esha"
                 name={"Intro to Python"}
               />
                <Workshop 
-                description=""
+                description="Within this workshop, students will learn how to make a cross-platform database app. The goal of this database program is to store user information, like names, ages, emails, and phone numbers. In order to make this app, our workshop will use React Native, Java, Node.JS, and, MariaDB. All languages will be taught to the extent possible to make the app, but after teaching what is needed, students can do further if they want to further research the language they coded in."
                 images={[
-                  "/workshops/react.png"
+                  "/sbcsclub/workshops/react.png"
                 ]}
                 teachers="Tejas & Ali"
                 name={"Cross-Platform Database App"}
@@ -156,7 +156,7 @@ const Home: NextPage = () => {
                <Workshop 
                 description=""
                 images={[
-                  "/workshops/matplotlib.png"
+                  "/sbcsclub/workshops/matplotlib.png"
                 ]}
                 teachers="Abhik & Yash"
                 name={"MatPlotLib"}
@@ -164,7 +164,7 @@ const Home: NextPage = () => {
                <Workshop 
                 description=""
                 images={[
-                  "/workshops/web-scraping.png"
+                  "/sbcsclub/workshops/web-scraping.png"
                 ]}
                 teachers="Mohammad & Satvik"
                 name={"Web Scraping"}
@@ -172,7 +172,7 @@ const Home: NextPage = () => {
               <Workshop 
                 description=""
                 images={[
-                  "/workshops/html.png"
+                  "/sbcsclub/workshops/html.png"
                 ]}
                 teachers="Mahit & Pooja"
                 name={"Web Development"}
@@ -180,7 +180,7 @@ const Home: NextPage = () => {
               <Workshop 
                 description=""
                 images={[
-                  "/workshops/sql.png"
+                  "/sbcsclub/workshops/sql.png"
                 ]}
                 teachers="Swathi & Aditi"
                 name={"SQL"}
@@ -188,7 +188,7 @@ const Home: NextPage = () => {
               <Workshop 
                 description=""
                 images={[
-                  "/workshops/binary-tree.png"
+                  "/sbcsclub/workshops/binary-tree.png"
                 ]}
                 teachers="Vivaan & Burhan"
                 name={"Data Structures and Algorithms"}

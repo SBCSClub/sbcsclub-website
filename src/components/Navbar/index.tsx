@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div style={{ 
                     height: minimized ? 50 :  100, width: minimized ? 50 :  100 
                 }} className="relative transition-all duration-300">
-                    <Image src={"/logo.png"} layout="fill" objectFit="contain" />
+                    <Image src={"/sbcsclub/logo.png"} layout="fill" objectFit="contain" />
                 </div>
                 <ul className="text-white flex space-x-6 p-2">
                     <li>
