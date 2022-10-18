@@ -5,8 +5,13 @@
     width: 100%;
     height: 100px; 
     filter: blur(125px);
-    -webkit-filter: blur(92px);
     border-radius: 10%;
     max-height: 400px;
     background: linear-gradient(90deg, rgba(255, 205, 159, 0.5) 25%, rgba(119, 222, 255, 0.4) 50%, rgba(221, 14, 255, 0.15) 75% );
+}
+
+@media screen and (max-width: 768px) {
+    .footerGradientBubble {
+        filter: blur(92px);
+    }
 }
