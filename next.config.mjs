@@ -22,7 +22,7 @@ export default defineNextConfig({
     defaultLocale: "en",
   },
   images: {
-    loader: "cloudinary",
-    path: "https://res.cloudinary.com/mahitm-cdn/image/upload/",
+    loader: env.NODE_ENV === "production" ? "cloudinary" : undefined,
+    path: env.NODE_ENV === "production" ? "https://res.cloudinary.com/mahitm-cdn/image/upload/" : undefined,
   }
 });
