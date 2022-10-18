@@ -2,9 +2,7 @@ import clsx from "clsx";
 import React, { useMemo } from "react";
 import FooterStyles from "./footer.module.css";
 
-interface FooterProps extends React.HTMLProps<HTMLDivElement> {}
-
-const Footer : React.FC<FooterProps> = ({ className, ...props }) => {
+const PageFooter : React.FC<React.HTMLProps<HTMLDivElement>> = ({ className, ...props }) => {
     const currentYear = useMemo(() => {
         return new Date().getFullYear().toString();
     }, []);
@@ -20,4 +18,4 @@ const Footer : React.FC<FooterProps> = ({ className, ...props }) => {
     )
 }
 
-export default Footer; 
+export default PageFooter; 
