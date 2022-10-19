@@ -130,7 +130,7 @@ const Workshop : React.FC<IWorkshopProps> = ({ setWorkshop, workshop, name, teac
                 }}
                 onClick={handleExpand}
                 className={clsx(
-                    "flex absolute w-[280px] my-3 mx-3 h-[280px] border-[rgba(255,255,255,0.1)] border flex-col items-center bg-[#111111] rounded-md p-6 z-10",
+                    "flex absolute w-[280px] h-[280px] border-[rgba(255,255,255,0.1)] border flex-col items-center bg-[#111111] rounded-md p-6 z-10",
                     !expanded && "bg-opacity-50"
                 )}>
                 {
