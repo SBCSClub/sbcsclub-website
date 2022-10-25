@@ -11,10 +11,6 @@ class RootDocument extends Document {
         return (
             <Html lang="en">
               <Head key="document">
-                  <link rel="preconnect" href="https://fonts.googleapis.com" />
-                  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                  { /* eslint-disable */  }
-                  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
               </Head>
               <body className="dark">
                 <Main />

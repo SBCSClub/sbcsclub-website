@@ -3,6 +3,10 @@ import type { AppType } from "next/app";
 import { trpc } from "../utils/trpc";
 import { createEmotionSsrAdvancedApproach } from "tss-react/next";
 import React from "react";
+import { Inter } from '@next/font/google';
+import clsx from "clsx";
+
+const inter = Inter();
 
 const {
     augmentDocumentWithEmotionCache,
@@ -13,7 +17,7 @@ export { augmentDocumentWithEmotionCache };
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <div>
+    <div className={clsx(inter.className)}>
       <Component {...pageProps} />
     </div>
   )
