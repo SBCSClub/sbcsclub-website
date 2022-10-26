@@ -10,7 +10,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../components/Navbar";
 import MeetingDate from "../components/MeetingDate";
 import Footer from "../components/Footer";
-import ClubCode from "../../public/sbcsclub/code.png";
 
 const Home: NextPage = () => {
   const landingContainerRef = useRef<HTMLDivElement | null>(null);
@@ -31,7 +30,7 @@ const Home: NextPage = () => {
               <div className="flex-1 justify-center z-20 space-y-6 flex flex-col items-start w-full">
                 <h1
                   style={{ lineHeight: 1.1 }}
-                  className="md:text-7xl text-5xl font-semibold text-white">
+                  className="md:text-7xl text-5xl font-medium text-white">
                     South Brunswick Computer Science Club.
                 </h1>
                 <h2
@@ -59,17 +58,19 @@ const Home: NextPage = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex-1 flex mt-28 md:mt-16 mb-8 relative justify-center max-h-[1000px] items-center">
+              <div className="flex-1 flex mt-16 relative justify-center max-h-[1000px] items-center">
                 <div className="lg:absolute lg:scale-150 z-10">
                   <Image 
-                    src={ClubCode} 
-                    quality={100}                    
-                    alt="Club Code"
+                    src={"/sbcsclub/code.png"} 
+                    quality={100} 
+                    objectFit="contain" 
+                    width={1000} 
+                    height={1000} 
                   />
                 </div>
               </div>
           </section>
-          <section id="overview" className="min-h-[500px] mb-[100px] items-center flex flex-col-reverse lg:flex-row max-w-7xl px-12 md:px-3">
+          <section id="overview" className="min-h-[500px] mb-[100px] items-center flex flex-col-reverse lg:flex-row max-w-7xl px-6 md:px-3">
             <div className="flex-1 relative flex justify-center items-center space-x-0 md:space-x-6">
               <div className={`${HomeStyles.gradientBubbleOne}`}></div>
               <div className="flex-col flex space-y-3 w-min">
@@ -94,8 +95,8 @@ const Home: NextPage = () => {
             <div className="flex-1 my-[100px] lg:my-0 space-y-6">
               <h1
                 style={{ lineHeight: 1.1 }}
-                className="md:text-7xl text-5xl font-semibold text-white">
-                 <span className={`${HomeStyles.overviewHeader} font-medium`}>Club</span> Overview.
+                className="md:text-7xl text-5xl font-medium text-white">
+                 <span className={`${HomeStyles.overviewHeader}`}>Club</span> Overview.
               </h1>
               <p
                 className="md:text-xl text-lg text-white font-light text-opacity-60">
@@ -122,14 +123,14 @@ const Home: NextPage = () => {
             <div className={`${HomeStyles.gradientBubbleTwo}`}></div>
             <h1
               style={{ lineHeight: 1.1 }}
-              className="md:text-7xl text-5xl z-10 font-semibold text-white">
+              className="md:text-7xl text-5xl font-medium text-white">
                 <span className={`${HomeStyles.proHighlight}`}>Pro</span> Workshops.
             </h1>
             <h2
-              className="md:text-xl z-10 px-6 md:px-0 text-lg text-white font-light text-center text-opacity-60">
+              className="md:text-xl px-6 md:px-0 text-lg text-white font-light text-center text-opacity-60">
                 Explore a Variety of Useful Workshops and Plan For Your Next Endeavor.
             </h2>
-            <div className="h-min content-start flex w-full flex-wrap justify-center items-center">
+            <div className="min-h-screen content-start flex w-full flex-wrap justify-center items-center">
               <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}

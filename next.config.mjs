@@ -21,8 +21,8 @@ export default defineNextConfig({
     locales: ["en"],
     defaultLocale: "en",
   },
-  // images: {
-  //   loader: env.NODE_ENV === "production" ? "cloudinary" : undefined,
-  //   path: env.NODE_ENV === "production" ? "https://res.cloudinary.com/mahitm-cdn/image/upload/" : undefined,
-  // }
+  images: {
+    loader: env.NODE_ENV === "production" ? "cloudinary" : undefined,
+    path: env.NODE_ENV === "production" ? "https://res.cloudinary.com/mahitm-cdn/image/upload/" : undefined,
+  }
 });

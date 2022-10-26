@@ -146,16 +146,7 @@ const Workshop : React.FC<IWorkshopProps> = ({ setWorkshop, workshop, name, teac
                 <div className="my-3">
                     {
                         images.map((url, index) => (
-                            <Image 
-                                key={index} 
-                                alt={`${name} Workshop Icon`} 
-                                width={100} 
-                                height={100} 
-                                src={url} 
-                                style={{
-                                    objectFit: "contain"
-                                }}
-                            />
+                            <Image key={index} objectFit="contain" width={100} height={100} src={url} />
                         ))
                     }
                 </div>

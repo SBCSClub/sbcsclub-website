@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useCallback, useEffect, useState } from "react";
-import ClubLogo from "../../../public/sbcsclub/logo.png"; 
 
 const Navbar = () => {
     const [ minimized, setMinimized ] = useState(false);
@@ -30,10 +29,7 @@ const Navbar = () => {
                 <div style={{ 
                     height: minimized ? 50 :  100, width: minimized ? 50 :  100 
                 }} className="relative transition-all duration-300">
-                    <Image 
-                        src={ClubLogo}  
-                        alt="Club Logo"
-                    />
+                    <Image src={"/sbcsclub/logo.png"} layout="fill" objectFit="contain" />
                 </div>
                 <ul className="text-white flex space-x-6 p-2">
                     <li>
