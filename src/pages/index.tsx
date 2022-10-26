@@ -69,7 +69,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
           </section>
-          <section id="overview" className="min-h-[500px] mb-[100px] items-center flex flex-col-reverse lg:flex-row max-w-7xl px-6 md:px-3">
+          <section id="overview" className="min-h-[500px] mb-[100px] items-center flex flex-col-reverse lg:flex-row max-w-7xl px-12 md:px-3">
             <div className="flex-1 relative flex justify-center items-center space-x-0 md:space-x-6">
               <div className={`${HomeStyles.gradientBubbleOne}`}></div>
               <div className="flex-col flex space-y-3 w-min">
