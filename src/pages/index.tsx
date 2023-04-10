@@ -87,7 +87,7 @@ const Home: NextPage = () => {
                 <MeetingDate date="February 14th, 2023" />
                 <MeetingDate date="March 7th, 2023" />
                 <MeetingDate date="March 21st, 2023" />
-                <MeetingDate date="April 4th, 2023" />
+                <MeetingDate date="April 18th, 2023" />
                 <MeetingDate date="May 2nd, 2023" />
                 <MeetingDate date="May 30th, 2023" />
               </div>
