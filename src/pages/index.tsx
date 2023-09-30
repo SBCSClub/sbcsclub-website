@@ -135,82 +135,52 @@ const Home: NextPage = () => {
               <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}
-                  description="The course will focus on mobile app development using Flutter.  Students will learn various technologies, such as the implementation of buttons, text, and different screens. In the end, each student will be able to design their own basic app."
+                  description="-"
                   images={[
-                    "/sbcsclub/workshops/flutter.png"
+                    "/sbcsclub/workshops/rust.png"
                   ]}
-                  teachers="Shreya & Sharvani"
-                  name={"Flutter App Development"}
+                  teachers="Shahrian Masud, Mohammad Sadiq, Sreeram Vuppala"
+                  name={"Intro to Rust"}
               />
                <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}
-                  description="Introduction to Python will introduce students to the basics of Python through mini projects. Some topics covered will include data types, conditionals, loops, and functions. These principles will then be applied to create a large project by the end of the workshop."
+                  description="-"
                   images={[
-                    "/sbcsclub/workshops/python.png"
+                    "/sbcsclub/workshops/roblox.png"
                   ]}
-                  teachers="Diya & Esha"
-                  name={"Intro to Python"}
+                  teachers="Anika Thakur, Esha Vigneswaran, Tejas Raghuram"
+                  name={"Roblox Game Dev"}
               />
                <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}
-                  description="Within this workshop, students will learn how to make a cross-platform database app. The goal of this database program is to store user information, like names, ages, emails, and phone numbers. In order to make this app, our workshop will use React Native, Java, Node.JS, and, MariaDB. All languages will be taught to the extent possible to make the app, but after teaching what is needed, students can do further if they want to further research the language they coded in."
+                  description="-"
                   images={[
-                    "/sbcsclub/workshops/react.png"
+                    "/sbcsclub/workshops/cloud-services.png"
                   ]}
-                  teachers="Tejas & Ali"
-                  name={"Cross-Platform Database App"}
+                  teachers="Mahit Mehta, Ali Azam, Diya Shah"
+                  name={"Cloud Services"}
+              />
+              <Workshop 
+                  setWorkshop={setWorkshop}
+                  workshop={workshop}
+                  description="-"
+                  images={[
+                    "/sbcsclub/workshops/web-scraping.png"
+                  ]}
+                  teachers="Vivaan Shah, Abhik Mojumdar, Armaan Sarkhel"
+                  name={"Web Scraping"}
               />
                <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}
                   description="With the Python data visualization workshop, we will be working to work with the MatPlotLib library in Python to use graphics to visualize data on your screen. This workshop is best for students with a more advanced python skill level."
                   images={[
-                    "/sbcsclub/workshops/matplotlib.png"
+                    "/sbcsclub/workshops/flutter.png"
                   ]}
-                  teachers="Abhik & Yash"
-                  name={"MatPlotLib"}
-              />
-               <Workshop 
-                  setWorkshop={setWorkshop}
-                  workshop={workshop}
-                  description="Web scraping is the act of searching for data on websites. The web scraping workshop will cover the BeautifulSoup library in Python and students will learn how to harvest information from the internet."
-                  images={[
-                    "/sbcsclub/workshops/web-scraping.png"
-                  ]}
-                  teachers="Mohammad & Satvik"
-                  name={"Web Scraping"}
-              />
-              <Workshop 
-                setWorkshop={setWorkshop}
-                workshop={workshop}
-                description="In the web development course students will learn how to setup a basic html file with basic elements and learn simple SEO (Search Engine Optimization). Additionally, students will learn how to style the page with css and JavaScript to create simple, effective animations to make their webpage will smooth and snappy. At the end of the class they will be tasked to create a portfolio website with their new skills and assistance from their teachers."
-                images={[
-                  "/sbcsclub/workshops/html.png"
-                ]}
-                teachers="Mahit & Pooja"
-                name={"Web Development"}
-              />
-              <Workshop 
-                setWorkshop={setWorkshop}
-                workshop={workshop}
-                description="For the SQL workshop, we will introduce relational databases. SQL commands will be taught and the students in our workshops will download open source databases and practice SQL with the databases. Students will learn how to create database tables, as well as insert, withdraw, add, and delete data."
-                images={[
-                  "/sbcsclub/workshops/sql.png"
-                ]}
-                teachers="Swathi & Aditi"
-                name={"SQL"}
-              />
-              <Workshop 
-                setWorkshop={setWorkshop}
-                workshop={workshop}
-                description="We are running an introductory course on data structures and algorithms where we go over what algorithms, data structures, and time complexity are, and how all of these are important for their practical uses. We will also be going over a few basic sorting and searching algorithms and basic data structures. If we get extra time, we will also be going over some more advanced data structures and algorithms. The course will be taught in Java to save time as everyone who takes it will know how to code in Java."
-                images={[
-                  "/sbcsclub/workshops/binary-tree.png"
-                ]}
-                teachers="Vivaan & Burhan"
-                name={"Data Structures and Algorithms"}
+                  teachers="Aarnav Srivastava, Anoushka Abroal, Krisha Shah"
+                  name={"Flutter App Development"}
               />
             </div>
           </section>
