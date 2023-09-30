@@ -31,21 +31,21 @@ const Home: NextPage = () => {
                 <h1
                   style={{ lineHeight: 1.1 }}
                   className="md:text-7xl text-5xl font-medium text-white">
-                    South Brunswick Computer Science Club.
+                    South Brunswick Computer Science Club
                 </h1>
                 <h2
                   className="md:text-xl text-lg text-white font-light text-opacity-60">
                     Master powerful tools and next-level skills to pursue a career in computer science.
                 </h2>
                 <div className="space-x-6 flex">
-                  <a href="https://tinyurl.com/5n86ht4r" rel="noopener noreferrer nofollow" target={"_blank"}>
+                  <a href="https://forms.gle/k8k71EUXmiMS1eQG6" rel="noopener noreferrer nofollow" target={"_blank"}>
                     <button className="bg-white transition-opacity hover:opacity-50 rounded-full p-3">
-                      Workshop Sign Up.
+                      Workshop Sign Up
                     </button>
                   </a>
                  <a href="#workshops">
                     <button className="transition-opacity hover:opacity-50 text-white p-3">
-                      View Workshops.
+                      View Workshops
                     </button>
                  </a>
                 </div>
@@ -97,7 +97,7 @@ const Home: NextPage = () => {
               <h1
                 style={{ lineHeight: 1.1 }}
                 className="md:text-7xl text-5xl font-medium text-white">
-                 <span className={`${HomeStyles.overviewHeader}`}>Club</span> Overview.
+                 <span className={`${HomeStyles.overviewHeader}`}>Club</span> Overview
               </h1>
               <p
                 className="md:text-xl text-lg text-white font-light text-opacity-60">
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
             <h1
               style={{ lineHeight: 1.1 }}
               className="md:text-7xl text-5xl font-medium text-white">
-                <span className={`${HomeStyles.proHighlight}`}>Pro</span> Workshops.
+                <span className={`${HomeStyles.proHighlight}`}>Pro</span> Workshops
             </h1>
             <h2
               className="md:text-xl px-6 md:px-0 text-lg text-white font-light text-center text-opacity-60">
