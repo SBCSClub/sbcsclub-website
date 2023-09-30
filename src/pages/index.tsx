@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="mx-auto flex min-h-screen overflow-hidden w-screen flex-col items-center justify-center">
+      <main className="mx-auto flex min-h-screen overflow-hidden w-full flex-col items-center justify-center">
           <section id="home" ref={landingContainerRef} className="flex container p-5 relative justify-center lg:flex-row flex-col-reverse items-center w-full min-h-screen">
               <div className={`${HomeStyles.gradientBubbleOne}`}></div>
               <div className="flex-1 justify-center z-20 space-y-6 flex flex-col items-start w-full">
