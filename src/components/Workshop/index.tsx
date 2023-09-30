@@ -91,7 +91,6 @@ const Workshop : React.FC<IWorkshopProps> = ({ setWorkshop, workshop, name, teac
             return; 
         } 
 
-        console.log(expanded, boxProperties, width, height, dimensionsRef.current);
         setExpanded(false);
         setBoxProperties({
             height: undefined,
