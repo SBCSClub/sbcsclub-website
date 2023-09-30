@@ -81,7 +81,6 @@ const Home: NextPage = () => {
                 <MeetingDate date="December 5th, 2023" />
                 <MeetingDate date="December 19th, 2023" />
                 <MeetingDate date="January 2nd, 2024" />
-                <MeetingDate date="" />
               </div>
               <div className="flex-col flex !ml-3 md:ml-0 space-y-3 w-min">
                 <h1 className="text-white font-medium text-center text-lg">2nd Semester</h1>
