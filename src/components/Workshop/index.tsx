@@ -151,14 +151,14 @@ const Workshop : React.FC<IWorkshopProps> = ({ setWorkshop, workshop, name, teac
                 </div>
                 <div className="flex flex-col items-center space-y-2">
                     <h1 className="text-white font-medium text-xl text-center">{ name } </h1>
-                    <h2 className="text-white opacity-75 text-base">{ teachers }</h2>
+                    <h2 className="text-white opacity-75 text-base text-center">{ teachers }</h2>
                 </div>
                 <div 
                     style={{
                         opacity: expanded ? 1 : 0
                     }}
                     className="my-3 transition-opacity">
-                    <p className="text-white font-normal">
+                    <p className="text-white font-normal text-center">
                         { description }
                     </p>
                 </div>
