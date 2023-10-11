@@ -135,7 +135,7 @@ const Home: NextPage = () => {
               <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}
-                  description="-"
+                  description="Rust is a blazingly fast and memory-efficient general-purpose programming language. We will be teaching the basics of rust and working through many of the features needed to use it for any purpose, such as ownership, structures, pattern matching, and concurrency. Prior knowledge of basic programming concepts is highly recommended."
                   images={[
                     "/sbcsclub/workshops/rust.png"
                   ]}
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
                <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}
-                  description="-"
+                  description="Learn the fundamentals of computer science using Lua along with the Roblox Game Engine! By the end of this workshop, members will be able to create a 3D story-based game in Roblox with generated mobs, while learning basic programming."
                   images={[
                     "/sbcsclub/workshops/roblox.png"
                   ]}
@@ -155,7 +155,7 @@ const Home: NextPage = () => {
                <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}
-                  description="-"
+                  description="Cloud services are essential for deploying, scaling, developing applications in todays time. In this workshop students will learn how to use services provided both by Firebase (GCP) and Oracle. Services include Cloud functions (serverless functions), Firestore (real-time database), Firebase authentication, and Oracle virtual machines, and more. Basic understanding of at least one programming language advised, preferebly JavaScript.  "
                   images={[
                     "/sbcsclub/workshops/cloud-services.png"
                   ]}
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
               <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}
-                  description="-"
+                  description="We will teach the basics of Web Scraping. We will go over scraping websites for basic tags like <p>, <h>, etc. By the end of the workshop, people will know how to scrape basics from any site and automate a few basic tasks"
                   images={[
                     "/sbcsclub/workshops/web-scraping.png"
                   ]}
@@ -175,7 +175,7 @@ const Home: NextPage = () => {
                <Workshop 
                   setWorkshop={setWorkshop}
                   workshop={workshop}
-                  description="With the Python data visualization workshop, we will be working to work with the MatPlotLib library in Python to use graphics to visualize data on your screen. This workshop is best for students with a more advanced python skill level."
+                  description="We will teach the key elements of the Flutter framework, such as state management, navigation, and http request handling. By the end, participants will have several small projects that they can put on their resume, as will as have knowledge of the basics of the Flutter framework."
                   images={[
                     "/sbcsclub/workshops/flutter.png"
                   ]}
