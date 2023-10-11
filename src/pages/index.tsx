@@ -109,7 +109,7 @@ const Home: NextPage = () => {
                 className="md:text-xl text-lg text-white font-light text-opacity-60">
                   To gain club credit you must at least&nbsp;
                   <span className={HomeStyles.proHighlight}>50%</span>&nbsp;
-                  of the meetings, pay to participate 
+                  of the meetings, pay to participate&nbsp; 
                 { /*(<span className={HomeStyles.proHighlight}>$25</span>) */}
                   on Community Pass, and submit club dues 
                   (<span className={HomeStyles.proHighlight}>$10</span>).
