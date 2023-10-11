@@ -75,22 +75,22 @@ const Home: NextPage = () => {
               <div className={`${HomeStyles.gradientBubbleOne}`}></div>
               <div className="flex-col flex space-y-3 w-min">
                 <h1 className="text-white font-medium text-center text-lg">1st Semester</h1>
-                <MeetingDate date="October 10th, 2023" />
+                <MeetingDate date="October 11th, 2023" />
                 <MeetingDate date="October 25th, 2023" />
-                <MeetingDate date="November 21st, 2023" />
-                <MeetingDate date="December 5th, 2023" />
-                <MeetingDate date="December 19th, 2023" />
+                <MeetingDate date="October 31st, 2023" />
+                <MeetingDate date="November 28th, 2023" />
+                <MeetingDate date="December 12th, 2023" />
                 <MeetingDate date="January 2nd, 2024" />
               </div>
               <div className="flex-col flex !ml-3 md:ml-0 space-y-3 w-min">
                 <h1 className="text-white font-medium text-center text-lg">2nd Semester</h1>
                 <MeetingDate date="January 16th, 2024" />
-                <MeetingDate date="February 6th, 2024" />
+                <MeetingDate date="February 13th, 2024" />
                 <MeetingDate date="February 20th, 2024" />
                 <MeetingDate date="March 12th, 2024" />
                 <MeetingDate date="April 3rd, 2024" />
                 <MeetingDate date="April 30th, 2024" />
-                <MeetingDate date="May 29th, 2024" />
+                <MeetingDate date="May 14th, 2024" />
               </div>
             </div>
             <div className="flex-1 my-[100px] lg:my-0 space-y-6">
