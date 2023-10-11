@@ -10,4 +10,4 @@ Additionally, this is an app bootstrapped according to the [init.tips](https://i
 
 # Deploy
 
-Push to the main branch for automatic deployment to Vercel.
+Push to the main branch for automatic deployment to Vercel!
