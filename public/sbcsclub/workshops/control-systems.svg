@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="circuitBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Cog / Gear Outer Profile -->
+  <path fill="#1a202c" d="M 90 20 L 78 22 L 74 33 L 64 36 L 54 28 L 43 33 L 43 45 L 34 52 L 23 48 L 17 58 L 22 69 L 17 78 L 6 84 L 6 96 L 6 104 L 6 116 L 17 122 L 22 131 L 17 142 L 23 152 L 34 148 L 43 155 L 43 167 L 54 172 L 64 164 L 74 167 L 78 178 L 90 180 C 45 180 15 144 15 100 C 15 56 45 20 90 20 Z"/>
+
+  <!-- Left Inner Half-Circle cutout -->
+  <path fill="#0a0a0f" d="M 90 48 A 52 52 0 0 0 90 152 Z"/>
+
+  <!-- Circuit Trace 1 (Top) -->
+  <path d="M 74 62 L 120 62 L 138 40 L 160 40" fill="none" stroke="url(#circuitBlue)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="168" cy="40" r="10" fill="#38bdf8"/>
+  <circle cx="168" cy="40" r="5" fill="#ffffff"/>
+
+  <!-- Circuit Trace 2 (Upper Middle) -->
+  <path d="M 74 86 L 145 86 L 162 68 L 180 68" fill="none" stroke="url(#circuitBlue)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="188" cy="68" r="10" fill="#38bdf8"/>
+  <circle cx="188" cy="68" r="5" fill="#ffffff"/>
+
+  <!-- Circuit Trace 3 (Lower Middle) -->
+  <path d="M 74 114 L 140 114 L 152 114" fill="none" stroke="url(#circuitBlue)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="160" cy="114" r="10" fill="#38bdf8"/>
+  <circle cx="160" cy="114" r="5" fill="#ffffff"/>
+
+  <!-- Circuit Trace 4 (Bottom) -->
+  <path d="M 74 138 L 115 138 L 135 158 L 145 158" fill="none" stroke="url(#circuitBlue)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="152" cy="158" r="10" fill="#38bdf8"/>
+  <circle cx="152" cy="158" r="5" fill="#ffffff"/>
+</svg>

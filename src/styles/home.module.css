@@ -18,11 +18,11 @@
     user-select: none;
     width: 100%;
     height: 30%;
-    filter: blur(92px);
-    transform: rotate(30deg) translateZ(0);
-    border-radius: 10%;
+    filter: blur(120px);
+    transform: rotate(20deg) translateZ(0);
+    border-radius: 20%;
     max-height: 400px;
-    background: linear-gradient( 90deg, rgba(255, 205, 159, 0.5) 25%, rgba(119, 222, 255, 0.4) 50%, rgba(221, 14, 255, 0.15) 75% );
+    background: radial-gradient(circle, rgba(252, 192, 1, 0.18) 0%, rgba(119, 222, 255, 0.12) 50%, rgba(0, 0, 0, 0) 70%);
 }
 
 .gradientBubbleTwo {
@@ -32,22 +32,57 @@
     user-select: none;
     width: 100%;
     height: 30%;
-    filter: blur(100px);
-    transform: rotate(-30deg) translateZ(0);
-    border-radius: 10%;
+    filter: blur(120px);
+    transform: rotate(-20deg) translateZ(0);
+    border-radius: 20%;
     max-height: 400px;
-    background: linear-gradient(90deg, rgba(255, 205, 159, 0.5) 25%, rgba(119, 222, 255, 0.4) 50%, rgba(221, 14, 255, 0.15) 75% );
+    background: radial-gradient(circle, rgba(252, 192, 1, 0.15) 0%, rgba(119, 222, 255, 0.1) 50%, rgba(0, 0, 0, 0) 70%);
 }
 
 .proHighlight {
     -webkit-text-fill-color: transparent; 
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, rgba(255, 205, 159, 0.5) 0%, rgba(119, 222, 255, 0.4) 46%, rgba(221, 14, 255, 0.15) 100%);
+    background-image: linear-gradient(135deg, #ffffff 30%, #fcc001 100%);
     background-clip: text;
 }
 
 .overviewHeader {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px;
     color: white;
+}
+
+.glassCard {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glassCard:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(252, 192, 1, 0.35);
+    transform: translateY(-2px);
+}
+
+.badge {
+    background: rgba(252, 192, 1, 0.12);
+    border: 1px solid rgba(252, 192, 1, 0.3);
+    color: #fcc001;
+}
+
+.badgeGreen {
+    background: rgba(74, 222, 128, 0.12);
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    color: #4ade80;
+}
+
+.badgeCyan {
+    background: rgba(119, 222, 255, 0.12);
+    border: 1px solid rgba(119, 222, 255, 0.3);
+    color: #77deff;
+}
+
+.badgeRed {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #f87171;
 }

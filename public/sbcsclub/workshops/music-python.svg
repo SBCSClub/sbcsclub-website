@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Transparent background, Treble Clef Snake in high resolution -->
+  <g fill="#ffffff" stroke="#111827">
+    <!-- Main G-clef vertical spine -->
+    <path d="M 112 18 L 118 18 L 116 160 C 116 182 95 194 78 186 C 65 178 68 162 78 156 C 88 150 102 156 102 166 C 102 172 98 175 94 175 C 92 175 88 172 90 166 C 92 162 96 162 98 165 C 96 172 88 170 86 164 C 84 158 92 152 100 156 C 108 160 108 174 94 180 C 80 186 64 174 72 158 C 80 144 106 142 108 160 L 108 18 Z" fill="#111827"/>
+
+    <!-- Snake Head (Top loop) -->
+    <path d="M 114 18 C 114 18 100 12 84 26 C 68 40 70 60 82 78 C 94 94 114 112 114 112 C 114 112 136 94 138 68 C 140 42 126 22 114 18 Z" fill="#111827" stroke="#ffffff" stroke-width="1.5"/>
+    
+    <!-- Snake Head Details / Eye & Tongue -->
+    <path d="M 130 36 C 138 38 144 48 142 54 C 138 52 134 46 128 44 Z" fill="#ffffff"/>
+    <circle cx="126" cy="40" r="2.5" fill="#111827"/>
+    <path d="M 142 52 C 148 54 154 52 156 50 M 154 52 L 158 56" fill="none" stroke="#111827" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Middle & Lower Loop (G-clef swirl) -->
+    <path d="M 114 112 C 114 112 134 118 142 134 C 150 152 138 170 118 174 C 94 178 74 162 74 138 C 74 112 96 94 118 94 C 134 94 148 106 148 124 C 148 140 134 150 120 148 C 108 146 100 136 104 124 C 108 114 122 114 126 122 C 128 128 124 134 118 134 C 114 134 110 130 112 126 C 114 122 120 122 120 125 C 118 128 114 128 114 127" fill="none" stroke="#111827" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- White patterned belly & scales along the body -->
+    <!-- Top inner scales -->
+    <path d="M 88 34 C 84 44 86 54 94 66" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 98 42 C 96 50 98 58 104 68" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 124 58 C 126 68 122 78 114 88" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Main swirl scale patterns -->
+    <path d="M 82 134 C 82 152 96 164 114 162 C 128 160 136 148 132 136 C 128 124 116 122 110 126" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-dasharray="6,4" stroke-linecap="round"/>
+  </g>
+</svg>
